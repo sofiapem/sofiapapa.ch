@@ -20,6 +20,8 @@ body{
 	/*background-color: rgba(255,255,0,0.2);*/
 }
 
+#bilingue {padding-right: 50px; padding-top: 50px; text-align: right;}
+
 #Header h1 {
 	margin-bottom: 1em; 
 	font-weight: bold;
@@ -36,6 +38,7 @@ body{
 	/*border: 1px solid blue;
 	padding-left: 2em;*/
 	padding-top: 115px;
+	padding-bottom: 180px;
 	line-height: 2em;
 }
 
@@ -68,6 +71,7 @@ body{
 	bottom: 0;
 	width: 320px;
 	width: calc(320px + 3em);
+	padding-bottom: 50px;
 	/*background-color: rgba(255,0,255,0.2);*/
 }
 
