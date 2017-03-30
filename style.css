@@ -159,6 +159,55 @@ a.marcel{
 }
 
 
+/*for 1400px or less, ordinateur*/
+
+@media screen and (max-width: 1400px) {
+
+	#global {
+		width: 100%;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	article {
+		width: 78%;
+	}
+	aside {
+		width: 20%;
+	}
+}
+
+/*for 800px or less, tablettes*/
+
+@media screen and (max-width: 800px) {
+
+	article {
+		width: auto;
+		float: none;
+		padding: 2%;
+		margin-bottom: 2%;
+	}
+	aside {
+		width: auto;
+		float: none;
+		padding: 2%;
+	}
+}
+
+/*for 480px or less, tablettes*/
+
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 34px;
+	}
+	aside {
+		display: none;
+	}
+}
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 

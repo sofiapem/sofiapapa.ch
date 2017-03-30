@@ -53,6 +53,8 @@ Avec Luca Reichenbach 👀</p>
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
  </div>
 
+ <embed src="mon_animation.swf" quality="high">
+
 </div>
 	</div><!-- end .gallery -->
 		</article>
@@ -61,6 +63,23 @@ Avec Luca Reichenbach 👀</p>
 
 <div id="Footer">©2017 design et développement sofia papaefthymiou</div>
 	</div><!-- end #Page -->
-	<script type="text/javascript" src="../index.js"></script>
+	<script type="text/javascript" src="../index.js">
+
+$("#more_come").click(function(){
+     
+    $.ajax({
+       url : 'more_com.php', // La ressource ciblée
+       type : 'GET', // Le type de la requête HTTP
+
+       /**
+        * Le paramètre data n'est plus renseigné, nous ne faisons plus passer de variable
+        */
+
+       dataType : 'html' // Le type de données à recevoir, ici, du HTML.
+    });
+   
+});
+
+	</script>
 </body>
 </htlm>
