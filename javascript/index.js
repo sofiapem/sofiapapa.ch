@@ -1,3 +1,24 @@
+var container = $('#container');
+            $.ajaxSetup({
+                timeout:5000,
+                error: function(req,error){
+                  if(error === 'error'){error = req.statusText;}
+                  var errormsg = 'There was a communication error: '+error;
+                  container.html('<div class="ajax-error font-norm">'+errormsg+'</div>');
+                }
+            });
+            $('.button').click(function(){ // info
+                var toLoad = $(this).attr('href')+' #content';
+                console.log('target: '+toLoad);
+                $('#container').html('<div class="ajax-loading"></div>');
+                $('#container').load(toLoad, function() {
+                    $('#container').show('slow');
+                });
+                return false;
+            }); // end of first part
+
+
+
 var slideIndex = 1;
 showDivs(slideIndex);
 
