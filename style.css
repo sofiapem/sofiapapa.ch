@@ -1,17 +1,6 @@
 body {
-                font-family: Georgia, "Times New Roman", Serif;
-                padding: 5vmin;
-            }
-            .index {
-                list-style: none;
-                padding: 0;
-                margin-bottom: 2em;
-            }
            
-            .button {
-                
-                
-            }
+            
             #container {
                 background: WHITESMOKE;
                 border: 2px dashed DARKGRAY;
@@ -27,6 +16,15 @@ body {
 	font-weight: 100;
 /*	text-align: justify; */
 	background-color: #FFF;
+}
+.button {          
+                
+            }
+
+#container {
+background: WHITESMOKE;
+border: 2px dashed DARKGRAY;
+padding: 1em;
 }
 
 #Page {
