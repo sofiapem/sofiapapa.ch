@@ -7,21 +7,7 @@ body {
                 padding: 0;
                 margin-bottom: 2em;
             }
-            .numeros {
-                display: inline;
-                margin-right: 1em;
-                font-size: 150%;
-            }
-            .titres {
-                display: inline;
-                margin-right: 1em;
-                font-size: 150%;
-            }
-            .sections {
-                display: inline;
-                margin-right: 1em;
-                font-size: 150%;
-            }
+           
             .button {
                 
                 
