@@ -2,12 +2,22 @@ body {
                 font-family: Georgia, "Times New Roman", Serif;
                 padding: 5vmin;
             }
-            .menu {
+            .index {
                 list-style: none;
                 padding: 0;
                 margin-bottom: 2em;
             }
-            .menu li {
+            .numeros {
+                display: inline;
+                margin-right: 1em;
+                font-size: 150%;
+            }
+            .titres {
+                display: inline;
+                margin-right: 1em;
+                font-size: 150%;
+            }
+            .sections {
                 display: inline;
                 margin-right: 1em;
                 font-size: 150%;
