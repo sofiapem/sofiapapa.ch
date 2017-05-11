@@ -77,10 +77,26 @@ $(document).ready(function(){
         
         $('#container').html('<div class="ajax-loading"></div>');
         $('#container').load(toLoad, function() {
-            $('#container').show('slow');
+            // $('#container').show('slow');
+
+            var page = $('#container'); // Page cible
+            var speed = 750; // Durée de l'animation (en ms)
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+
         });
         return false;
-  }); // end of first part
+  }); // end of ajax action
+
+
+
+  $('#indexlink').on("click", function(){ // info
+
+            var page = $('.index'); // Page cible
+            var speed = 750; // Durée de l'animation (en ms)
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+  }); // end of second part
 
 
 

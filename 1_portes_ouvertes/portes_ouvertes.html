@@ -3,8 +3,8 @@
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 	<link href='../style.css' rel='stylesheet' type='text/css'>
-				<!-- Link Swiper's CSS 
-			    <link rel="stylesheet" href="swiper.min.css"> -->
+				<!-- Link Swiper's CSS -->
+    			<link rel="stylesheet" href="swiper.min.css">
 	<meta charset="utf-8" />
 	<title>sofia papaefthymiou</title>
 	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -38,11 +38,21 @@ intervenant Giorgio Pesce</p>
 			</div>
 
 <div class="gallery">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide"> 
+			<img src="../1_portes_ouvertes/portes_ouvertes_1_ombre.jpg"></img> 
+		</div>
+	</div>
 
-	<img src="../1_portes_ouvertes/portes_ouvertes_1_ombre.jpg"></img>
-	<img src="../1_portes_ouvertes/portes_ouvertes_2_ombre.jpg"></img>
-	<img src="../1_portes_ouvertes/portes_ouvertes_ambiance.jpg"></img>
+	<!-- <img src="../1_portes_ouvertes/portes_ouvertes_2_ombre.jpg"></img>
+	<img src="../1_portes_ouvertes/portes_ouvertes_ambiance.jpg"></img> -->
 
+		        <!-- Add Pagination -->
+		        <div class="swiper-pagination"></div>
+		        <!-- Add Arrows -->
+		        <div class="swiper-button-next"></div>
+		        <div class="swiper-button-prev"></div>
+</div>
 
 		</article>
 
@@ -52,5 +62,21 @@ intervenant Giorgio Pesce</p>
 	</div><!-- end #Page -->
 	<script type="text/javascript" src="../javascript/jquery-3.2.0.min.js"></script>
 	<script type="text/javascript" src="../javascript/index.js"></script>
+
+	<!-- Swiper JS -->
+    <script src="../dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.gallery', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true
+    });
+    </script>
 </body>
 </htlm>

@@ -13,7 +13,20 @@ body {
 /*background: WHITESMOKE;
 border: 2px dashed DARKGRAY;*/
 padding: 1em;
+padding-top: 20vh;
 }
+
+
+/*for 800px or less, tablettes*/
+
+@media screen and (max-height: 400px) {
+
+	#container {
+		padding-top: 10vh;
+	}
+
+}
+
 
 #Page {
 	border: 1px solid #FFFFFF;
@@ -21,7 +34,7 @@ padding: 1em;
 }
 
 #Header{
-	padding-top: 100px;
+	padding-top: 10vh;
 	float: right;
 	width: 320px;
 	/*text-transform: uppercase;
@@ -42,13 +55,20 @@ padding: 1em;
 	padding-top:80px;
 }
 
+#tableau {
+	height: 100vh;
+}
+
 .index {
 	width: 70%;
 	/*border: 1px solid blue;
 	padding-left: 2em;*/
 	padding-top: 115px;
 	padding-bottom: 180px;
-	line-height: 2em;
+}
+
+.index tr {
+	height: 2em;
 }
 
 .index .numeros {
@@ -98,6 +118,7 @@ padding: 1em;
 .gallery { 
 	order: 1;
 	flex: 1;
+	height: 100vh;
 	padding-left: 20px;
 	padding-right: 20px;
 	/*border-top: 1px solid #F0F;*/
@@ -106,6 +127,37 @@ padding: 1em;
 .gallery img {
 	width: 50%;
 }
+
+/*for 800px or less, tablettes*/
+
+@media screen and (max-width: 800px) {
+
+	.gallery img {
+	width: 100%;
+	border: 1px solid red;
+	}	
+
+}
+
+				    .swiper-slide {
+				        text-align: center;
+				        font-size: 18px;
+				        background: #fff;
+				        /* Center slide text vertically */
+				        display: -webkit-box;
+				        display: -ms-flexbox;
+				        display: -webkit-flex;
+				        display: flex;
+				        -webkit-box-pack: center;
+				        -ms-flex-pack: center;
+				        -webkit-justify-content: center;
+				        justify-content: center;
+				        -webkit-box-align: center;
+				        -ms-flex-align: center;
+				        -webkit-align-items: center;
+				        align-items: center;
+				    }
+
 
 /*
 .gallery .columnleft{
@@ -181,6 +233,7 @@ a.marcel{
 		float: right;
 		font-weight: bold;
 }
+
 
 
 /*for 1400px or less, ordinateur*/
