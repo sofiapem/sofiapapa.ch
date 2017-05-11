@@ -99,6 +99,13 @@ $(document).ready(function(){
   }); // end of second part
 
 
+  $('#accueillink').on("click", function(){ // info
+
+            var page = $('body'); // Page cible
+            var speed = 750; // Durée de l'animation (en ms)
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+  }); // end of second part
 
   
 
