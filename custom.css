@@ -1,0 +1,300 @@
+/* fonts */
+@font-face {
+	font-family: "Confederation-Regular";
+	src: url('Confederation-Regular.otf');  
+	src: 	
+		local('Confederation-Regular'),
+		local('Confederation-Regular'),
+		url('Confederation-Regular.otf')
+		format('opentype');
+}
+/* defaults */
+
+::selection{
+	background-color: rgba(0,0,0,0.25);
+	color: white;
+}
+
+::-moz-selection {
+	background-color: rgba(0,0,0,0.25);
+	color: white;
+}
+
+html,
+body {
+	height: 100%;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+	font-family: 'Confederation-Regular';
+	font-size: 0.9em;
+	-webkit-font-variant-ligatures: common-ligatures;
+	font-variant-ligatures: common-ligatures;
+}
+
+body.hinted {
+    font-family: 'Confederation-Regular';
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	-webkit-transition: color .3s ease-in-out;
+	-moz-transition: color .3s ease-in-out;
+	-ms-transition: color .3s ease-in-out;
+	-o-transition: color .3s ease-in-out;
+	transition: color .3s ease-in-out;
+}
+
+.hidden {
+	display: none;
+}
+
+.clear {
+	clear: both;
+}
+
+/* custom.css #5BDD45  #0000FF*/
+
+*:hover > a {
+	color: #5F9EA0;
+}
+
+a:hover {
+	color: #FF00FF;
+}
+
+a:focus {
+	outline: none;
+}
+
+header {
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	padding: .8em 0 0 .6em;
+}
+
+
+
+
+footer{
+	font-size:0.7em; 
+
+	z-index:88888;
+	position:absolute; 
+	right: 20; 
+	bottom: 0; 
+	left: 0;
+	padding: .8em
+}
+
+
+#colophon{
+	top:0px;
+	height:100%;
+	width:50%;
+	left:100%;
+	position: absolute; 
+	background-color:transparent; 
+	z-index:1000000000000;
+	overflow-x:none;
+	overflow-y:auto;
+	}
+
+#menu-colophon{
+	/*cursor:pointer; 
+	position:fixed;*/
+	left:8px; /* avant  right:75px;*/
+	top:25px; /* avant top:8px;*/
+	height:35px;margin:0;padding:0;
+	z-index:1000000000000; 
+	text-decoration:none;
+	}
+	
+#menu-colophon p{
+padding:0;
+margin:0;
+	}	
+
+#colophon #menu-colophon-close{
+	cursor:pointer;
+	position:absolute;
+	right:20px;
+	top:8px;
+	z-index:1000000000000;
+
+	}	
+
+#colophon #colophon-content{
+	position:relative; 
+	box-sizing:border-box;
+	background-color:#FFF; 
+	left:0;
+	top:0px;
+	width:100%; 
+	height:100%; 
+	float:left;
+	margin:0;
+	padding:2%;
+	z-index:10000000000; 
+	padding-top:0px;
+	overflow:scroll
+
+	}
+
+	#contact {
+		visibility: hidden;
+		max-height: 0px;
+		overflow: hidden;
+		line-height: 1.1em;
+		-webkit-transition: max-height .5s ease-in-out, visibility 0s .5s;
+		-moz-transition: max-height .5s ease-in-out, visibility 0s .5s;
+		-ms-transition: max-height .5s ease-in-out, visibility 0s .5s;
+		-o-transition: max-height .5s ease-in-out, visibility 0s .5s;
+		transition: max-height .5s ease-in-out, visibility 0s .5s;
+	}
+	#contact.active {
+			visibility: visible;
+			max-height: 500px;
+			-webkit-transition-delay: 0s, 0s;
+			-moz-transition-delay: 0s, 0s;
+			-ms-transition-delay: 0s, 0s;
+			-o-transition-delay: 0s, 0s;
+			transition-delay: 0s, 0s;
+	}
+	#contact > a {
+			display: block;
+			font-style: normal;
+	}
+
+#projects {
+	width: 90%;
+	height: 80%;
+	padding-left: 20px;
+	padding: 0 0 1em .8em;
+	-webkit-overflow-scrolling: touch;
+}
+
+	#projects > article {
+		padding-right: 1em;
+		width: 80%;
+		clear: both;
+	}
+
+	#first {
+		padding-top: .95em;
+	}
+
+			#projects > article > .diaporama {
+				/*padding-top: 10%;*/
+				padding-top: 10%;
+				float: center;
+				width: 94%;       /*avant 80%*/
+				padding-left: 1em;
+				margin-bottom: 0em;
+				margin-right: 1%; /* avant 2% */
+			}
+
+										/*#projects > article > #first {
+											padding-top: 0%;
+											float: center;
+											width: 80%;
+											padding-left: 1em;
+											margin-bottom: 0em;
+											margin-right: 1%;  avant 2% 
+										} TOUT EN HAUT, PAS D'ESPACE*/
+
+			#projects > article > .diaporama > .swiper-container > .swiper-wrapper > .swiper-slide {
+				height: auto; /* POURQUOI ??? ça me touche le premier projet */
+			}
+
+			#projects > article > .diaporama > .swiper-container > .swiper-wrapper > .swiper-slide > img {
+				max-width: 100%;
+			}
+
+									#projects > article > .diaporama > .swiper-container > .swiper-wrapper > .swiper-slide > video {
+											height: auto;
+											max-width: 100%;
+									}
+
+			/*						
+			#projects > article > .diaporama > .swiper-container > .swiper-wrapper > .swiper-slide {
+				height: 100%; /* POURQUOI ??? ça me touche le premier projet 
+			}
+
+			#projects > article > .diaporama > .swiper-container > .swiper-wrapper > .swiper-slide > img {
+				max-width: 100%;
+			}
+			/*#projects > article > .diaporama > .swiper-container > .swiper-wrapper > .swiper-slide > video {
+				max-width: 50%;
+				max-height: 50%;
+			}
+
+									#projects > article > .diaporama > .swiper-container > .swiper-wrapper > .swiper-slide > video {
+											max-width: 100%;
+									}*/ 
+
+			#projects > article > .diaporama > .swiper-container > .next,
+			#projects > article > .diaporama > .swiper-container > .prev {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				width: 50%;
+				z-index: 666;
+			}	
+										/* JE PEUX CHANGER LE CURSEUR!!!*/
+			#projects > article > .diaporama > .swiper-container > .next {
+				right: 0%;
+				/*cursor: url('../imgs/*next.png') 8 8, e-resize; */
+				cursor: pointer;
+			} 
+
+			#projects > article > .diaporama > .swiper-container > .prev {
+				/*cursor: url('../imgs/*prev.png') 8 8, w-resize;*/
+				cursor: pointer;
+			}
+
+@media screen and (max-width: 1080px) {
+	header {
+		width: 100%;
+		padding-right: .8em;
+	}
+
+	#projects {
+		/*width: 96%;*/
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 864px) {
+	header {
+		width: 100%;
+		padding-right: .8em;
+		position: relative;
+	}
+
+	#projects {
+		padding-bottom: 0;
+	}
+
+	#projects > article > .diaporama {
+		width: 140%;
+		padding-left: 0;
+		margin-bottom: 0.8em;
+		padding-top: 110px;
+	}
+
+	#projects > article:last-of-type > .diaporama {
+		margin-bottom: 1em;
+	}
+
+		#projects > article > .diaporama > .swiper-container > .swiper-wrapper > .swiper-slide.description {
+			display: block;
+		}
+}
